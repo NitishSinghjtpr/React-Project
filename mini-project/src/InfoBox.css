@@ -1,0 +1,61 @@
+/* Page center alignment */
+.InfoBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* Card wrapper */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Card */
+.MuiCard-root {
+  width: 345px;
+  border-radius: 16px !important;
+  overflow: hidden;
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect (subtle) */
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Image */
+.MuiCardMedia-root {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* City Name */
+.MuiTypography-h5 {
+  text-align: center;
+  font-weight: 600 !important;
+  color: #111827 !important; /* Dark visible text */
+  margin-bottom: 12px !important;
+}
+
+/* Weather Info Container */
+.MuiTypography-body2 {
+  font-size: 0.95rem;
+  color: #374151 !important; /* Soft dark gray */
+  text-align: center;
+}
+
+/* Each line styling */
+.MuiTypography-body2 div,
+.MuiTypography-body2 p {
+  margin: 8px 0;
+  padding: 6px 0;
+}
+
+/* Remove default <br> spacing issue */
+.MuiTypography-body2 br {
+  display: none;
+}
